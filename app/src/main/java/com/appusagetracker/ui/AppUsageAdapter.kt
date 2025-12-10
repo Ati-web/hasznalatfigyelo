@@ -1,4 +1,4 @@
-package hu.anna.hasznalatfigyelo.ui
+package com.appusagetracker.ui
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,9 +7,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import hu.anna.hasznalatfigyelo.R
-import hu.anna.hasznalatfigyelo.data.AppUsageEntity
-import hu.anna.hasznalatfigyelo.util.DateHelper
+import com.appusagetracker.R
+import com.appusagetracker.data.AppUsageEntity
+import com.appusagetracker.util.DateHelper
 import java.text.SimpleDateFormat
 import java.util.Locale
 

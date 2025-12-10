@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "hu.anna.hasznalatfigyelo"
+    namespace = "com.appusagetracker"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "hu.anna.hasznalatfigyelo"
+        applicationId = "com.appusagetracker"
         minSdk = 26
         targetSdk = 33
         versionCode = 1

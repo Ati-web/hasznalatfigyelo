@@ -1,11 +1,11 @@
-package hu.anna.hasznalatfigyelo.worker
+package com.appusagetracker.worker
 
 import android.content.Context
 import android.content.Intent
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import hu.anna.hasznalatfigyelo.service.UsageStatsService
-import hu.anna.hasznalatfigyelo.util.PermissionHelper
+import com.appusagetracker.service.UsageStatsService
+import com.appusagetracker.util.PermissionHelper
 
 class DailyUsageStatsWorker(
     context: Context,

@@ -1,4 +1,4 @@
-package hu.anna.hasznalatfigyelo.util
+package com.appusagetracker.util
 
 import java.util.Calendar
 

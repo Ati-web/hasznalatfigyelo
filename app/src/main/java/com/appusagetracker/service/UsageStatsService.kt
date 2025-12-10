@@ -1,4 +1,4 @@
-package hu.anna.hasznalatfigyelo.service
+package com.appusagetracker.service
 
 import android.app.Service
 import android.app.usage.UsageEvents
@@ -10,8 +10,8 @@ import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
 import android.os.IBinder
 import android.util.Log
-import hu.anna.hasznalatfigyelo.data.AppUsageDatabase
-import hu.anna.hasznalatfigyelo.data.AppUsageEntity
+import com.appusagetracker.data.AppUsageDatabase
+import com.appusagetracker.data.AppUsageEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -139,7 +139,7 @@ class UsageStatsService : Service() {
     
     companion object {
         private const val TAG = "UsageStatsService"
-        const val ACTION_COLLECT_USAGE = "hu.anna.hasznalatfigyelo.COLLECT_USAGE"
+        const val ACTION_COLLECT_USAGE = "com.appusagetracker.COLLECT_USAGE"
     }
 }
 

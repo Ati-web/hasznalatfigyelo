@@ -1,4 +1,4 @@
-package hu.anna.hasznalatfigyelo.util
+package com.appusagetracker.util
 
 import android.app.usage.UsageStatsManager
 import android.content.Context

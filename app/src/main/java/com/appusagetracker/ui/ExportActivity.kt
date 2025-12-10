@@ -1,4 +1,4 @@
-package hu.anna.hasznalatfigyelo.ui
+package com.appusagetracker.ui
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -12,10 +12,11 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.snackbar.Snackbar
-import hu.anna.hasznalatfigyelo.R
-import hu.anna.hasznalatfigyelo.data.AppUsageDatabase
-import hu.anna.hasznalatfigyelo.databinding.ActivityExportBinding
-import hu.anna.hasznalatfigyelo.util.DateHelper
+import com.appusagetracker.R
+import com.appusagetracker.data.AppUsageDatabase
+import com.appusagetracker.data.AppUsageEntity
+import com.appusagetracker.databinding.ActivityExportBinding
+import com.appusagetracker.util.DateHelper
 import kotlinx.coroutines.launch
 import org.json.JSONArray
 import org.json.JSONObject
@@ -119,7 +120,7 @@ class ExportActivity : AppCompatActivity() {
         }
     }
     
-    private fun exportToCsv(usageList: List<hu.anna.hasznalatfigyelo.data.AppUsageEntity>, file: File) {
+    private fun exportToCsv(usageList: List<AppUsageEntity>, file: File) {
         FileWriter(file).use { writer ->
             // CSV fejléc
             writer.append("Alkalmazás neve,Package név,Használati idő (ms),Használati idő (olvasható),Utolsó használat,Indítások száma,Dátum\n")
@@ -138,7 +139,7 @@ class ExportActivity : AppCompatActivity() {
         }
     }
     
-    private fun exportToJson(usageList: List<hu.anna.hasznalatfigyelo.data.AppUsageEntity>, file: File) {
+    private fun exportToJson(usageList: List<AppUsageEntity>, file: File) {
         val jsonArray = JSONArray()
         val dateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
         

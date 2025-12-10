@@ -1,4 +1,4 @@
-package hu.anna.hasznalatfigyelo
+package com.appusagetracker
 
 import android.app.Application
 import androidx.work.Constraints
@@ -6,10 +6,10 @@ import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.NetworkType
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
-import hu.anna.hasznalatfigyelo.worker.DailyUsageStatsWorker
+import com.appusagetracker.worker.DailyUsageStatsWorker
 import java.util.concurrent.TimeUnit
 
-class HasznalatfigyeloApplication : Application() {
+class AppUsageTrackerApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()

@@ -1,4 +1,4 @@
-# Használatfigyelő Android Alkalmazás
+# App Usage Tracker - Android Alkalmazás
 
 Egy megbízható Android alkalmazás, amely nyomon követi az alkalmazások használatát a telefonon - mely alkalmazások futnak, mennyi ideig és mikor.
 
@@ -22,7 +22,8 @@ Egy megbízható Android alkalmazás, amely nyomon követi az alkalmazások hasz
 
 1. **Projekt klónozása vagy letöltése**
    ```bash
-   cd /home/anna/lineages/használatfigyelő
+   git clone https://github.com/Ati-web/hasznalatfigyelo.git
+   cd hasznalatfigyelo
    ```
 
 2. **Android Studio-ban megnyitás**
@@ -52,7 +53,7 @@ Egy megbízható Android alkalmazás, amely nyomon követi az alkalmazások hasz
    - Nyissa meg az alkalmazást
    - Ha megjelenik a figyelmeztetés, kattintson a "Engedély megadása" gombra
    - Vagy manuálisan: **Beállítások > Alkalmazások > Speciális hozzáférés > Használati hozzáférés**
-   - Keresse meg a "Használatfigyelő" alkalmazást a listában
+   - Keresse meg az "App Usage Tracker" alkalmazást a listában
    - Kapcsolja be a kapcsolót
 
 2. **Tárhely engedély** (csak Android 10 és régebbi verziókhoz):
@@ -175,11 +176,12 @@ Az alkalmazás Room adatbázist használ az adatok tárolásához. Az adatbázis
 ```
 app/
 ├── src/main/
-│   ├── java/hu/anna/hasznalatfigyelo/
+│   ├── java/com/appusagetracker/
 │   │   ├── data/          # Adatbázis entitások és DAO-k
 │   │   ├── service/       # Háttér szolgáltatások
 │   │   ├── ui/            # Felhasználói felület (Activity-k, ViewModel-ek)
-│   │   └── util/          # Segédfunkciók
+│   │   ├── util/          # Segédfunkciók
+│   │   └── worker/        # Background workers
 │   ├── res/               # Erőforrások (layout, string, stb.)
 │   └── AndroidManifest.xml
 ```
@@ -193,7 +195,11 @@ Ha problémába ütközik vagy kérdése van, ellenőrizze:
 
 ## Licenc
 
-Ez az alkalmazás személyes használatra készült. A kódot saját felelősségre használhatja és módosíthatja.
+Ez az alkalmazás nyílt forráskódú. A kódot szabadon használhatja és módosíthatja saját felelősségre.
+
+## Közreműködés
+
+A projekt nyitott a közreműködésre! Ha talál hibát vagy van javaslata, nyisson egy Issue-t vagy Pull Request-et.
 
 ## Frissítések
 

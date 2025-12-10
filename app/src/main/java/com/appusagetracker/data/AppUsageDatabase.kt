@@ -1,4 +1,4 @@
-package hu.anna.hasznalatfigyelo.data
+package com.appusagetracker.data
 
 import android.content.Context
 import androidx.room.Database

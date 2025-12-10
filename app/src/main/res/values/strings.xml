@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Használatfigyelő</string>
+    <string name="app_name">App Usage Tracker</string>
     <string name="no_usage_stats_permission">A használati statisztikák engedélye szükséges a működéshez. Kérjük, engedélyezze a beállításokban.</string>
     <string name="grant_permission">Engedély megadása</string>
     <string name="refresh">Frissítés</string>

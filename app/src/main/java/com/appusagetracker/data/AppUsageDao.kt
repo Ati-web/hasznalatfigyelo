@@ -1,4 +1,4 @@
-package hu.anna.hasznalatfigyelo.data
+package com.appusagetracker.data
 
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow

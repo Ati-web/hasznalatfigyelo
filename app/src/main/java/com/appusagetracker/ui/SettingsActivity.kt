@@ -1,4 +1,4 @@
-package hu.anna.hasznalatfigyelo.ui
+package com.appusagetracker.ui
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.snackbar.Snackbar
-import hu.anna.hasznalatfigyelo.R
-import hu.anna.hasznalatfigyelo.data.AppUsageDatabase
-import hu.anna.hasznalatfigyelo.databinding.ActivitySettingsBinding
-import hu.anna.hasznalatfigyelo.service.UsageStatsService
-import hu.anna.hasznalatfigyelo.util.PermissionHelper
+import com.appusagetracker.R
+import com.appusagetracker.data.AppUsageDatabase
+import com.appusagetracker.databinding.ActivitySettingsBinding
+import com.appusagetracker.service.UsageStatsService
+import com.appusagetracker.util.PermissionHelper
 import kotlinx.coroutines.launch
 import java.util.Calendar
 
