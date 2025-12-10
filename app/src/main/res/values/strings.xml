@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Használatfigyelő</string>
+    <string name="no_usage_stats_permission">A használati statisztikák engedélye szükséges a működéshez. Kérjük, engedélyezze a beállításokban.</string>
+    <string name="grant_permission">Engedély megadása</string>
+    <string name="refresh">Frissítés</string>
+    <string name="export">Exportálás</string>
+    <string name="settings">Beállítások</string>
+    <string name="app_name_label">Alkalmazás neve</string>
+    <string name="usage_time">Használati idő</string>
+    <string name="last_used">Utolsó használat</string>
+    <string name="launch_count">Indítások száma</string>
+    <string name="filter_by_date">Szűrés dátum szerint</string>
+    <string name="today">Ma</string>
+    <string name="yesterday">Tegnap</string>
+    <string name="this_week">Ez a hét</string>
+    <string name="this_month">Ez a hónap</string>
+    <string name="all_time">Összes</string>
+    <string name="export_success">Adatok sikeresen exportálva</string>
+    <string name="export_failed">Az exportálás sikertelen</string>
+    <string name="delete_data">Adatok törlése</string>
+    <string name="delete_confirm">Biztosan törölni szeretné az összes adatot?</string>
+    <string name="yes">Igen</string>
+    <string name="no">Nem</string>
+    <string name="no_data">Nincs rögzített adat</string>
+    <string name="collecting_data">Adatok gyűjtése...</string>
+</resources>
+
